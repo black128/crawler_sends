@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bjksrs.crawler_sends.mapper.UpMapper">
+
+    <select id="getData" resultType="com.bjksrs.crawler_sends.pojo.UpBean" parameterType="string">
+        SELECT * FROM from_execl WHERE left(createtime,10) = #{createTime}
+    </select>
+
+</mapper>
